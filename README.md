@@ -76,12 +76,12 @@ $ rails db:migrate db:seed
 
 ## Validations
 
-Add validations to the `Camper` model:
+[x] Add validations to the `Camper` model:
 
 - must have a `name`
 - must have an `age` between 8 and 18
 
-Add validations to the `Signup` model:
+[x] Add validations to the `Signup` model:
 
 - must have a `time` between 0 and 23 (referring to the hour of day for the
   activity)
@@ -93,7 +93,7 @@ specified along with the appropriate HTTP verb.
 
 ### GET /campers
 
-Return JSON data in the format below. **Note**: you should return a JSON
+[x] Return JSON data in the format below. **Note**: you should return a JSON
 response in this format, without any additional nested data related to each
 camper.
 
@@ -114,7 +114,7 @@ camper.
 
 ### GET /campers/:id
 
-If the `Camper` exists, return JSON data in the format below. **Note**: you will
+[x] If the `Camper` exists, return JSON data in the format below. **Note**: you will
 need to serialize the data for this response differently than for the
 `GET /campers` route. Make sure to include an array of activities for each
 camper.
@@ -139,7 +139,7 @@ camper.
 }
 ```
 
-If the `Camper` does not exist, return the following JSON data, along with
+[x] If the `Camper` does not exist, return the following JSON data, along with
 the appropriate HTTP status code:
 
 ```json
@@ -150,7 +150,7 @@ the appropriate HTTP status code:
 
 ### POST /campers
 
-This route should create a new `Camper`. It should accept an object with the
+[x] This route should create a new `Camper`. It should accept an object with the
 following properties in the body of the request:
 
 ```json
@@ -160,7 +160,7 @@ following properties in the body of the request:
 }
 ```
 
-If the `Camper` is created successfully, send back a response with the new
+[x] If the `Camper` is created successfully, send back a response with the new
 `Camper`:
 
 ```json
@@ -171,7 +171,7 @@ If the `Camper` is created successfully, send back a response with the new
 }
 ```
 
-If the `Camper` is **not** created successfully, return the following JSON data,
+[x] If the `Camper` is **not** created successfully, return the following JSON data,
 along with the appropriate HTTP status code:
 
 ```json
