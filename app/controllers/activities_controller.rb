@@ -5,8 +5,8 @@ class ActivitiesController < ApplicationController
     end
 
     def destroy
-        activity = Activity.find(params[:id])
-        activity.destroy
+        Activity.find(params[:id]).destroy
         head :no_content
     end
+    
 end
